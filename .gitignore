@@ -1,10 +1,7 @@
 .vscode
-#Arquivos da pasta eda
 eda/cpp_programs/exerciciosRecursividade/output
 eda/cpp_programs/laboratorio1/output
 eda/cpp_programs/laboratorio2/output
-#Arquivos da pasta learnCpp
-#Arquivos da pasta TEP
 TEP/contestToyota/a
 TEP/cppTraining
 TEP/Lista1/output
