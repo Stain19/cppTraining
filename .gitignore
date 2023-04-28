@@ -1,7 +1,7 @@
-.vscode
-eda/cpp_programs/exerciciosRecursividade/output
-eda/cpp_programs/laboratorio1/output
-eda/cpp_programs/laboratorio2/output
-TEP/contestToyota/a
-TEP/cppTraining
-TEP/Lista1/output
+.vscode/
+eda/cpp_programs/exerciciosRecursividade/output/*
+eda/cpp_programs/laboratorio1/output/*
+eda/cpp_programs/laboratorio2/output/*
+TEP/contestToyota/*
+TEP/cppTraining/*
+TEP/Lista1/output/*
