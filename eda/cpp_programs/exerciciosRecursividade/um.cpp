@@ -5,6 +5,24 @@ using namespace std;
     (int *vetor, int qtde)
 */
 
+void printElementosVetor(int * vetor,int tamanhoVetor){
+    cout << "Elementos vetor: "<<endl;
+    int pos;
+    for(pos = 0; pos < tamanhoVetor; pos++){
+        cout << vetor[pos] << " ";
+    }
+}
+
+/*Apesar de nao ter sido requisitado, irei fazer uma funcao que retorna valores aleatorios para 
+serem guardados dentro do vetorA.
+Nao eh necessario a adocao de uma funcao recursiva, apenas um laco eh suficiente.*/
+void valoresVetorRandom(int* vetorA,int tamanhoVetor){
+    for(int i = 0; i < tamanhoVetor ; i++){
+        //gerando valor aleatorios entre 0 e 100
+        vetorA[i] = rand() % 100;
+    }
+}
+
 long int somavet(int * vet, int qtde){
     long int soma = 0;
     //pega o valor do último elemento e adiciona a variável soma
@@ -18,13 +36,13 @@ long int somavet(int * vet, int qtde){
 }
 
 int main(){
-    //Utilizando um vetor 4 int
-    int qtde = 4;
+    int qtde;
+    //Requisitando ao usuario o tamanho do vetor
+    cout << "Qual o tamanho do vetor? ";
+    cin >> qtde;
     int * vetorA = new int[qtde];
-    vetorA[0] = 10;
-    vetorA[1] = 20;
-    vetorA[2] = 30;
-    vetorA[3] = 40;
-    cout << somavet(vetorA,qtde);
+    valoresVetorRandom(vetorA,qtde);
+    printElementosVetor(vetorA,qtde);
+    cout << endl << "Somas:" << endl << somavet(vetorA,qtde);
     return 0;
 }
